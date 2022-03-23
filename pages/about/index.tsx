@@ -56,14 +56,18 @@ export default function AboutPage({ fetchedMembers }: { fetchedMembers: TeamMemb
       <div className="top-6 p-4 flex flex-col gap-y-3">
         <h4 className="font-bold text-3xl">About this hackathon</h4>
         <p>
-          Here will be a short paragraph providing a general overview of what then hackathon is.
-          This can be dates, events, contests, and prizes.
+          UTD&apos;s women-driven tech organizations are excited to join forces and present our
+          first all women, non-binary, 24-hour hackathon. Our goal is to create an inclusive
+          environment that highlights and empowers women and non-binary students through technology.
+          We aim to encourage more underrepresented people to harness their skills to create
+          projects of their own.
         </p>
         <p>
-          This paragraph can be about the size and reach of the hackathon. Can include the number of
-          participants every year and the total worth of prizes.
+          Happening from April 2nd-3rd (2022), we&apos;re planning on hosting the second iteration
+          of WEHack in-person for the first time! Join us for some amazing workshops, free food, and
+          swag!
         </p>
-        <p>Any additional information can be provided in this paragraph.</p>
+        <p>We hope to see you for a great hacking experience!</p>
       </div>
 
       <div className="my-2">
