@@ -76,7 +76,7 @@ export default function AppHeader() {
         <div className="flex w-6/12 max-w-[156px] justify-between items-center md:max-w-full md:justify-start md:w-9/12">
           <Link href="/">
             <a className="flex order-2 relative ml-[-6px] font-display self-center items-center w-[112px] md:order-1 md:ml-0 md:w-[176px]">
-              <span className="text-[16px] font-black md:z-0 md:text-2xl md:mr-10">WEHack</span>
+              <span className="text-[16px] md:z-0 font-bold md:text-2xl md:mr-10">WEHack</span>
             </a>
           </Link>
           {/* Smartphone nav */}

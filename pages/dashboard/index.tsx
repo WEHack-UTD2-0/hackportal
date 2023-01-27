@@ -141,7 +141,7 @@ export default function Dashboard(props: {
             )}
             {/* Announcements */}
             <div className="lg:w-2/5 w-full h-96">
-              <h1 className="md:text-3xl text-xl font-black text-black">Announcements</h1>
+              <h1 className="md:text-3xl text-xl font-bold text-black">Announcements</h1>
               <div id="announcement-items" className="overflow-y-scroll h-9/10">
                 {announcements.map((announcement, idx) => {
                   const dateObj = new Date(announcement.timestamp!);

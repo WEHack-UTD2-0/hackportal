@@ -163,7 +163,7 @@ export default function HackerPack() {
         */}
 
         <div id="Subsection1" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="WEHack Hacker Guide"
@@ -179,7 +179,7 @@ export default function HackerPack() {
 
         {/* Section 1 */}
         <div id="Subsection1" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="Ultimate 8 Step Guide to Winning Hackathons"
@@ -198,7 +198,7 @@ export default function HackerPack() {
 
         {/* Section 2 */}
         <div id="Subsection1" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink title="SWE Website" link="https://sweutd.com/" />
           </div>
@@ -211,7 +211,7 @@ export default function HackerPack() {
 
         {/* Section 3 */}
         <div id="Subsection1" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="WEHack 2022 Projects"
@@ -230,7 +230,7 @@ export default function HackerPack() {
 
         {/* Section 4 */}
         <div id="Subsection1" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="WEHack 2020 Projects"

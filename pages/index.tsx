@@ -153,7 +153,7 @@ export default function Home(props: {
         </div>
       )}
       {/* Hero section */}
-      <section className="min-h-screen p-4 bg-indigo-100 bg-blue-450">
+      <section className="min-h-screen p-4 bg-blue-450 bg-blue-450">
         <div
           style={{ minHeight: 480 }}
           className="max-w-4xl mx-auto flex flex-col justify-center items-center"
@@ -162,10 +162,8 @@ export default function Home(props: {
             className="min-w-[280px] w-8/12 h-[240px] flex flex-col justify-center relative md:mb-28 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
-            <h1 className="text-center md:text-6xl text-3xl md:font-black font-bold text-black">
-              WEHack Portal
-            </h1>
-            <p className="text-center my-4 md:font-bold md:text-3xl text-xl text-yellow-250">
+            <h1 className="text-center md:text-6xl text-3xl font-bold text-black">WEHack Portal</h1>
+            <p className="text-center my-4 md:text-3xl text-xl text-white">
               Adventure is Out There!
             </p>
           </div>

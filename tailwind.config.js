@@ -8,7 +8,8 @@ module.exports = {
         'wehack-icon-2023': 'url(https://wehackutd.com/images/logos/updated_wehack_logo.jpg)',
       },
       fontFamily: {
-        sans: ['wavehaus'],
+        //sans: ['wavehaus'],
+        lora: ['montserrat'],
       },
       width: {
         '1/8': '12.5%',
