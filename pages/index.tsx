@@ -321,7 +321,7 @@ export default function Home(props: {
           {/* Text */}
           <div className="absolute bottom-0 right-0">
             {' '}
-            Checkout WEHack&apos;s{' '}
+            Check out WEHack&apos;s{' '}
             <a
               href="https://wehackutd.com/"
               rel="noopener noreferrer"

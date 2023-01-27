@@ -54,7 +54,7 @@ export default function Scan() {
     );
 
   return (
-    <div className="flex flex-wrap flex-grow text-white bg-blue-850">
+    <div className="flex flex-wrap flex-grow text-black bg-blue-450">
       <Head>
         <title>Scan-In</title>
         <meta name="description" content="HackPortal's Scan-In" />

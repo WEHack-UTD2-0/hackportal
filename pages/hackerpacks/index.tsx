@@ -22,7 +22,7 @@ export default function HackerPack() {
   const role = user.permissions?.length > 0 ? user.permissions[0] : '';
 
   return (
-    <div className="flex flex-grow flex-wrap bg-blue-850">
+    <div className="flex flex-grow flex-wrap bg-blue-450">
       <Head>
         <title>HackerPacks</title>
         <meta name="description" content="HackerPack Information" />
@@ -120,7 +120,7 @@ export default function HackerPack() {
       */}
 
       {/* Main content section */}
-      <section id="mainContent" className="px-6 py-3 w-3/4 md:wd-5/6 2xl:w-7/8 text-white">
+      <section id="mainContent" className="px-6 py-3 w-3/4 md:wd-5/6 2xl:w-7/8 text-black">
         <div className="font-bold text-2xl md:text-4xl lg-text-6xl">Resources</div>
 
         {/*
@@ -170,7 +170,7 @@ export default function HackerPack() {
               link="https://ultra-spell-68d.notion.site/WEHack-Hacker-Guide-dbce65f4cdb5462db75e56b661a1afc2"
             />
           </div>
-
+          <p>More information on judging, mentoring, teams, etc.</p>
           <p></p>
           <p>
             <br></br>
@@ -214,14 +214,33 @@ export default function HackerPack() {
           <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
-              title="WEHack 2020 Projects"
-              link="https://wehack-2020.devpost.com/project-gallery"
+              title="WEHack 2022 Projects"
+              link="https://wehack-22.devpost.com/project-gallery"
             />
           </div>
 
           <p>
             View projects from the last iteration of WEHack to get inspired! Click on the link above
             to learn more.
+          </p>
+          <p>
+            <br></br>
+          </p>
+        </div>
+
+        {/* Section 4 */}
+        <div id="Subsection1" className="my-7">
+          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+            {' '}
+            <DocLink
+              title="WEHack 2020 Projects"
+              link="https://wehack-2020.devpost.com/project-gallery"
+            />
+          </div>
+
+          <p>
+            View projects from the first iteration of WEHack to get inspired! Click on the link
+            above to learn more.
           </p>
           <p>
             <br></br>

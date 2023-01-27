@@ -98,7 +98,7 @@ export default function Dashboard(props: {
 
         <section
           id="mainContent"
-          className="lg:w-7/8 md:w-6/7 w-full px-6 py-3 bg-blue-850 text-white"
+          className="lg:w-7/8 md:w-6/7 w-full px-6 py-3 bg-blue-450 text-black"
         >
           <DashboardHeader />
           {/* Spotlight & Announcements */}
@@ -141,7 +141,7 @@ export default function Dashboard(props: {
             )}
             {/* Announcements */}
             <div className="lg:w-2/5 w-full h-96">
-              <h1 className="md:text-3xl text-xl font-black text-white">Announcements</h1>
+              <h1 className="md:text-3xl text-xl font-black text-black">Announcements</h1>
               <div id="announcement-items" className="overflow-y-scroll h-9/10">
                 {announcements.map((announcement, idx) => {
                   const dateObj = new Date(announcement.timestamp!);
@@ -162,7 +162,7 @@ export default function Dashboard(props: {
 
           {/* Challenges */}
           <div className="flex flex-col items-center my-8">
-            <h1 className="md:text-3xl text-xl font-black text-white">Challenges</h1>
+            <h1 className="md:text-3xl text-xl font-black text-black">Challenges</h1>
             {/* Cards */}
             <div className="challengeGrid my-8">
               {challenges.map(({ title, description, prizes }, idx) => (

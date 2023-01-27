@@ -153,7 +153,7 @@ export default function QuestionsPage() {
     );
 
   return (
-    <div className="flex flex-col flex-grow bg-blue-850 text-white">
+    <div className="flex flex-col flex-grow bg-blue-450 text-black">
       <Head>
         <title>WEHack HackPortal - Questions</title>
         <meta name="description" content="HackPortal's Quesiton and Answer Page " />
