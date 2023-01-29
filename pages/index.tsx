@@ -163,7 +163,7 @@ export default function Home(props: {
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
             <h1 className="text-center md:text-6xl text-3xl font-bold text-black">WEHack Portal</h1>
-            <p className="text-center my-4 md:text-3xl text-xl text-white">
+            <p className="text-center my-4 md:text-3xl text-xl text-yellow-250">
               Adventure is Out There!
             </p>
           </div>
@@ -265,7 +265,7 @@ export default function Home(props: {
             {challenges.map(({ organization }, idx) => (
               <div
                 id={`org${idx}`}
-                className={`${idx} relative cursor-pointer text-center md:text-lg sm:text-sm text-xs md:py-6 py-4 my-4 bg-purple-200 rounded-sm`}
+                className={`${idx} relative cursor-pointer text-center md:text-lg sm:text-sm text-xs md:py-6 py-4 my-4 bg-yellow-250 rounded-sm`}
                 key={idx}
                 onClick={() => changeOrg(idx)}
               >
