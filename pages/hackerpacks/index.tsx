@@ -251,7 +251,7 @@ export default function HackerPack() {
         <div id="Subsection1" className="my-7">
           <div className="text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
-            <p>HackUTD Resources</p>
+            <p>HackUTD Workshop</p>
           </div>
         </div>
 
@@ -262,6 +262,26 @@ export default function HackerPack() {
             <DocLink title="Node JS Tutorial" link="https://www.javatpoint.com/nodejs-tutorial" />
             <DocLink title="HTML/CSS/JS Reference" link="https://www.w3schools.com/" />
             <DocLink title="Online IDE" link="https://glitch.com/" />
+          </div>
+        </div>
+
+        {/* Section 6 */}
+        <div id="Subsection1" className="my-7">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+            {' '}
+            <p>Code Quantum Workshop</p>
+          </div>
+        </div>
+
+        {/* Section 7 */}
+        <div id="Subsection1" className="my-7">
+          <div className="text-lg md:text-xl lg:text-1xl mb-4">
+            {' '}
+            <DocLink title="Download Ren'Py" link="https://www.renpy.org/release/7.4.5" />
+            <DocLink
+              title="How to Install Ren'Py Documentation"
+              link="https://www.renpy.org/doc/html/quickstart.html"
+            />
           </div>
 
           <p>
