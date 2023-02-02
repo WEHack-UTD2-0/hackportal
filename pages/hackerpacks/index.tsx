@@ -167,10 +167,10 @@ export default function HackerPack() {
             {' '}
             <DocLink
               title="WEHack Hacker Guide"
-              link="https://ultra-spell-68d.notion.site/WEHack-Hacker-Guide-dbce65f4cdb5462db75e56b661a1afc2"
+              link="https://ultra-spell-68d.notion.site/WEHack-2023-Hacker-Guide-a660e7d4946e4a25b680846a45d5ce3d"
             />
           </div>
-          <p>More information on judging, mentoring, teams, etc.</p>
+          <p>More information about WEHack.</p>
           <p></p>
           <p>
             <br></br>
@@ -242,6 +242,28 @@ export default function HackerPack() {
             View projects from the first iteration of WEHack to get inspired! Click on the link
             above to learn more.
           </p>
+          <p>
+            <br></br>
+          </p>
+        </div>
+
+        {/* Section 4 */}
+        <div id="Subsection1" className="my-7">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+            {' '}
+            <p>HackUTD Resources</p>
+          </div>
+        </div>
+
+        {/* Section 5 */}
+        <div id="Subsection1" className="my-7">
+          <div className="text-lg md:text-xl lg:text-1xl mb-4">
+            {' '}
+            <DocLink title="Node JS Tutorial" link="https://www.javatpoint.com/nodejs-tutorial" />
+            <DocLink title="HTML/CSS/JS Reference" link="https://www.w3schools.com/" />
+            <DocLink title="Online IDE" link="https://glitch.com/" />
+          </div>
+
           <p>
             <br></br>
           </p>
