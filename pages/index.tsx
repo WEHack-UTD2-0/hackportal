@@ -159,19 +159,22 @@ export default function Home(props: {
           className="max-w-4xl mx-auto flex flex-col justify-center items-center"
         >
           <div
-            className="min-w-[280px] w-8/12 h-[200px] flex flex-col justify-center relative md:mb-30 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
+            className="min-w-[280px] w-8/12 h-[250px] flex flex-col justify-center relative md:mb-30 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
-            <h1 className="text-center md:text-6xl text-3xl font-bold text-black">WEHack Portal</h1>
-            <p className="text-center my-4 md:text-3xl text-xl text-yellow-250">
+            <h1 className="text-center md:text-7xl text-4xl font-bold text-black">WEHack Portal</h1>
+            <p className="text-center my-4 md:text-4xl text-2xl italic text-yellow-250">
               Adventure is Out There!
+            </p>
+            <p className="text-center md:text-2xl text-xl text-bold  text-[#d24a32]">
+              February 11th - 12th
             </p>
           </div>
           <Image
             src="https://wehackutd.com/images/logos/updated_wehack_logo.jpg"
             alt="WEHack 2023 Logo"
-            width={250}
-            height={250}
+            width={370}
+            height={370}
           />
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
           <div className="flex flex-col items-center">
