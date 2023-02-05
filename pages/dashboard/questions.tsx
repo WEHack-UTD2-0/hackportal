@@ -153,7 +153,7 @@ export default function QuestionsPage() {
     );
 
   return (
-    <div className="flex flex-col flex-grow bg-blue-450 text-black">
+    <div className="flex flex-col flex-grow text-black">
       <Head>
         <title>WEHack HackPortal - Questions</title>
         <meta name="description" content="HackPortal's Quesiton and Answer Page " />
@@ -184,7 +184,7 @@ export default function QuestionsPage() {
             <button
               type="button"
               className="p-2 rounded-lg"
-              style={{ backgroundColor: '#9CA6FF', color: 'black' }}
+              style={{ backgroundColor: '#e0a269', color: 'black' }}
               onClick={() => {
                 submitQuestion();
               }}
