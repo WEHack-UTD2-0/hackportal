@@ -282,6 +282,10 @@ export default function HackerPack() {
               title="How to Install Ren'Py Documentation"
               link="https://www.renpy.org/doc/html/quickstart.html"
             />
+            <DocLink
+              title="Ren'Py Assets"
+              link="https://https://github.com/Swapomtio/WeHacks-Ren-Py-Assets.renpy.org/latest.html"
+            />
           </div>
 
           <p>
