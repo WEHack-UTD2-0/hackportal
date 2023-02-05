@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'wehack-icon-2023': 'url(https://wehackutd.com/images/logos/updated_wehack_logo.jpg)',
+        'Background-image': 'url(../public/background.jpg)',
       },
       fontFamily: {
         //sans: ['wavehaus'],
