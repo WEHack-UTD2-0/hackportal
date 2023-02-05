@@ -22,7 +22,7 @@ export default function HackerPack() {
   const role = user.permissions?.length > 0 ? user.permissions[0] : '';
 
   return (
-    <div className="flex flex-grow flex-wrap bg-blue-450">
+    <div className="flex flex-grow flex-wrap">
       <Head>
         <title>HackerPacks</title>
         <meta name="description" content="HackerPack Information" />

@@ -54,7 +54,7 @@ export default function Scan() {
     );
 
   return (
-    <div className="flex flex-wrap flex-grow text-black bg-blue-450">
+    <div className="flex flex-wrap flex-grow text-black">
       <Head>
         <title>Scan-In</title>
         <meta name="description" content="HackPortal's Scan-In" />
@@ -74,7 +74,7 @@ export default function Scan() {
               <span className="text-center text-lg">{error}</span>
             </div>
             <div
-              className="rounded-2xl bg-green-300 text-center p-3 m-auto cursor-pointer hover:brightness-125 my-3"
+              className="rounded-2xl bg-orange-550 text-center p-3 m-auto cursor-pointer hover:brightness-125 my-3"
               onClick={fetchQR}
             >
               Fetch QR

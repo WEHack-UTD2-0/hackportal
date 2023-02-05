@@ -153,13 +153,13 @@ export default function Home(props: {
         </div>
       )}
       {/* Hero section */}
-      <section className="min-h-screen p-4 bg-blue-450 bg-blue-450">
+      <section className="min-h-screen p-4">
         <div
           style={{ minHeight: 480 }}
           className="max-w-4xl mx-auto flex flex-col justify-center items-center"
         >
           <div
-            className="min-w-[280px] w-8/12 h-[240px] flex flex-col justify-center relative md:mb-28 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
+            className="min-w-[280px] w-8/12 h-[200px] flex flex-col justify-center relative md:mb-30 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
             <h1 className="text-center md:text-6xl text-3xl font-bold text-black">WEHack Portal</h1>
@@ -180,7 +180,7 @@ export default function Home(props: {
             </p>
             <a
               href="https://wehackutd.com/"
-              className="px-4 py-3 text-yellow-250 no-underline bg-orange-550 rounded hover:bg-orange-650 font-bold"
+              className="px-5 py-5 text-yellow-250 no-underline bg-orange-550 rounded hover:bg-orange-650 font-bold"
             >
               wehackutd.com
             </a>
@@ -219,13 +219,13 @@ export default function Home(props: {
       </section>
     */}
       {/* Keynotes speakers */}
-      <section className="flex overflow-x-scroll min-h-[24rem] bg-blue-450">
-        <div className="flex items-center justify-center md:p-12 p-6 max-w-[18rem] text-2xl font-bold bg-blue-450 text-black">
+      <section className="flex overflow-x-scroll min-h-[24rem]">
+        <div className="flex items-center justify-center md:p-12 p-6 max-w-[18rem] text-2xl font-bold text-black">
           Keynote Speakers
         </div>
-        <div className="flex flex-col justify-center py-6 md:px-6 bg-blue-450">
+        <div className="flex flex-col justify-center py-6 md:px-6 ">
           {/* Row 1 */}
-          <div className="flex bg-blue-450">
+          <div className="flex ">
             {speakers.map(
               ({ name, description, fileName }, idx) =>
                 idx < speakers.length / 2 && (
@@ -240,7 +240,7 @@ export default function Home(props: {
             )}
           </div>
           {/* row 2 */}
-          <div className="flex md:ml-[7rem] ml-[5rem] bg-blue-450">
+          <div className="flex md:ml-[7rem] ml-[5rem] ">
             {speakers.map(
               ({ name, description, fileName }, idx) =>
                 idx >= speakers.length / 2 && (
@@ -257,7 +257,7 @@ export default function Home(props: {
         </div>
       </section>
       {/* Challenges */}
-      <section className="p-6 bg-blue-450">
+      <section className="p-6">
         <div className="font-bold text-2xl text-black">Challenges</div>
         <div className="flex">
           {/* Challenge Orgs Selectors*/}
@@ -297,7 +297,7 @@ export default function Home(props: {
       </section>
 
       {/* Footer */}
-      <section className="bg-gray-100 mt-16 px-6 py-8 md:text-base text-xs">
+      <section className="bg-orange-550 mt-16 px-6 py-8 md:text-base text-xs">
         {/* Upper Content */}
         <div className="my-2 relative">
           {/* Social icons */}

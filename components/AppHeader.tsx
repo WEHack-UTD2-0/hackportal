@@ -71,8 +71,8 @@ export default function AppHeader() {
 
   return (
     <>
-      <div className="min-h-[4rem]"></div>
-      <header className="top-0 fixed justify-between flex flex-row w-full bg-orange-550 items-center h-16 z-10 p-4">
+      <div className="min-h-[5rem]"></div>
+      <header className="top-0 fixed justify-between flex flex-row w-full bg-orange-550 items-center h-20 z-10 p-4">
         <div className="flex w-6/12 max-w-[156px] justify-between items-center md:max-w-full md:justify-start md:w-9/12">
           <Link href="/">
             <a className="flex order-2 relative ml-[-6px] font-display self-center items-center w-[112px] md:order-1 md:ml-0 md:w-[176px]">
@@ -85,23 +85,23 @@ export default function AppHeader() {
             <ul
               className={`${
                 showMenu ? 'translate-x-0' : '-translate-x-full'
-              } transform transition-all ease-out duration-300 flex w-6/12 h-screen border-2 border-black flex-col bg-white fixed top-0 left-0 z-[-1] pt-16`}
+              } transform transition-all ease-out duration-300 flex w-6/12 h-screen border-2 border-black flex-col bg-blue-450 fixed top-0 left-0 z-[-1] pt-20`}
             >
               {dynamicNavItems.map((item) => (
                 <Link key={item.text} href={item.path}>
-                  <a className="border-b-2 first:border-t-2 border-black p-4 py-6 hover:bg-[#D8F8FF]">
-                    <p className="text-sm font-bold">{item.text}</p>
+                  <a className="border-b-2 first:border-t-2 border-black p-4 py-6 hover:bg-[#e0a269]">
+                    <p className="text-lg font-bold">{item.text}</p>
                   </a>
                 </Link>
               ))}
             </ul>
           </div>
           {/* PC nav */}
-          <div className="hidden text-xs order-2 md:flex items-center md:text-left lg:ml-12">
+          <div className="hidden text-xs order-2 md:flex items-center md:text-left lg:ml-6">
             {dynamicNavItems.map((item) => (
               <Link key={item.text} href={item.path}>
                 <a>
-                  <p className="md:mx-4 text-sm font-bold">{item.text}</p>
+                  <p className="md:mx-5 text-xl font-bold">{item.text}</p>
                 </a>
               </Link>
             ))}
