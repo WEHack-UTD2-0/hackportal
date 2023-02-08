@@ -149,7 +149,7 @@ export default function Home(props: {
           id="popup"
           className="fixed z-50 md:translate-x-0 translate-x-1/2 w-[22rem] rounded-md px-4 py-2 top-16 md:right-6 right-1/2 bg-yellow-250 md:text-base text-sm"
         >
-          Turn on push notifications to recieve announcements!
+          Turn on push notifications to receive announcements!
         </div>
       )}
       {/* Hero section */}
