@@ -90,12 +90,12 @@ export default function AuthPage() {
       {/* md-lg screens */}
       <section className="min-h-screen h-screen md:flex hidden">
         {/* Login */}
-        <div className="flex flex-col justify-center items-center h-full w-2/3 text-center bg-white p-4">
+        <div className="flex flex-col justify-center items-center h-full w-2/3 text-center p-4">
           {!passwordResetDialog ? (
             <div>
               <h1 className="text-3xl font-black">Login to your account</h1>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-white my-4 text-lg font-bold hover:shadow-lg hover:bg-gray-100"
+                className="px-4 py-2 rounded-md shadow-md bg-orange-550 my-4 text-lg font-bold hover:shadow-lg hover:bg-blue-450"
                 onClick={() => signInWithGoogle()}
               >
                 Sign in with Google
@@ -108,7 +108,7 @@ export default function AuthPage() {
                     className="w-full rounded-lg p-2 border-[1px] border-gray-500"
                     value={currentEmail}
                     onChange={(e) => setCurrentEmail(e.target.value)}
-                    style={{ backgroundColor: '#FFF' }}
+                    style={{ backgroundColor: '#FFF2CE' }}
                     type="text"
                     name="email"
                     autoComplete="email"
@@ -119,7 +119,7 @@ export default function AuthPage() {
                     className="w-full rounded-lg p-2 my-2 border-[1px] border-gray-500"
                     value={currentPassword}
                     onChange={(e) => setCurrentPassword(e.target.value)}
-                    style={{ backgroundColor: '#FFF' }}
+                    style={{ backgroundColor: '#FFF2CE' }}
                     type="password"
                     name="password"
                     autoComplete="current-password"
@@ -148,7 +148,7 @@ export default function AuthPage() {
                   </div>
                   <button
                     type="button"
-                    className="px-4 py-2 w-[24rem] rounded-md shadow-md bg-green-200 hover:shadow-lg hover:bg-green-300"
+                    className="px-4 py-2 w-[24rem] rounded-md shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450"
                     onClick={() => {
                       signIn();
                     }}
@@ -185,11 +185,11 @@ export default function AuthPage() {
                   className="w-full rounded-lg p-2 border-[1px] border-gray-500 mt-8 mb-4"
                   value={currentEmail}
                   onChange={(e) => setCurrentEmail(e.target.value)}
-                  style={{ backgroundColor: '#FFF' }}
+                  style={{ backgroundColor: 'transparent' }}
                   placeholder="Email"
                 ></input>
                 <button
-                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-green-200 hover:shadow-lg hover:bg-green-300"
+                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');
@@ -203,13 +203,13 @@ export default function AuthPage() {
           )}
         </div>
         {/* Create new account sidebar*/}
-        <div className="flex flex-col justify-center items-center h-full w-1/3 bg-green-200 text-center p-4">
+        <div className="flex flex-col justify-center items-center h-full w-1/3 bg-blue-450 text-center p-4">
           <h1 className="text-3xl font-black">Don&#39;t have an account?</h1>
           <p className="my-6">
             Create an account to apply to the hackathon and access user specific functionalities!
           </p>
           <Link href="/auth/signup">
-            <a className="px-4 py-2 rounded-xl shadow-md bg-white hover:shadow-lg hover:bg-gray-100">
+            <a className="px-4 py-2 rounded-xl shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450">
               Sign up
             </a>
           </Link>
@@ -217,8 +217,8 @@ export default function AuthPage() {
       </section>
 
       {/* Small Screen */}
-      <section className="flex md:hidden min-h-screen h-screen justify-center bg-white">
-        <div className="flex flex-col items-center justify-center w-5/6 h-4/5 bg-blue-200 my-8 p-6">
+      <section className="flex md:hidden min-h-screen h-screen justify-center">
+        <div className="flex flex-col items-center justify-center w-5/6 h-4/5 my-8 p-6">
           {!passwordResetDialog ? (
             <>
               {/* Main Login Screen */}
@@ -227,7 +227,7 @@ export default function AuthPage() {
                 Log in to continue or create an account to register
               </p>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-white my-4 font-bold hover:shadow-lg hover:bg-gray-100"
+                className="px-4 py-2 rounded-md shadow-md bg-orange-550 my-4 font-bold hover:shadow-lg hover:bg-blue-450"
                 onClick={() => signInWithGoogle()}
               >
                 Sign in with Google
@@ -237,10 +237,10 @@ export default function AuthPage() {
               <div className="w-5/6">
                 <form onSubmit={handleSubmit}>
                   <input
-                    className="w-full rounded-lg p-2 border-[1px] border-gray-500"
+                    className="w-full rounded-lg p-2 border-[1px] "
                     value={currentEmail}
                     onChange={(e) => setCurrentEmail(e.target.value)}
-                    style={{ backgroundColor: '#FFF' }}
+                    style={{ backgroundColor: '#FFF2CE' }}
                     type="text"
                     name="email"
                     autoComplete="email"
@@ -248,10 +248,10 @@ export default function AuthPage() {
                   ></input>
                   <input
                     id="passwordInputSm"
-                    className="passwordInput w-full rounded-lg p-2 my-2 border-[1px] border-gray-500"
+                    className="passwordInput w-full rounded-lg p-2 my-2 border-[1px]"
                     value={currentPassword}
                     onChange={(e) => setCurrentPassword(e.target.value)}
-                    style={{ backgroundColor: '#FFF' }}
+                    style={{ backgroundColor: '#FFF2CE' }}
                     type="password"
                     name="password"
                     autoComplete="current-password"
@@ -269,7 +269,7 @@ export default function AuthPage() {
                 Show Password
               </div>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-white w-5/6 hover:shadow-lg hover:bg-gray-100"
+                className="px-4 py-2 rounded-md shadow-md bg-orange-550 w-5/6 hover:shadow-lg hover:bg-blue-450"
                 onClick={() => signIn()}
               >
                 Sign in
@@ -316,11 +316,11 @@ export default function AuthPage() {
                   className="w-full rounded-lg p-2 border-[1px] border-gray-500 my-4"
                   value={currentEmail}
                   onChange={(e) => setCurrentEmail(e.target.value)}
-                  style={{ backgroundColor: '#FFF' }}
+                  style={{ backgroundColor: 'transparent' }}
                   placeholder="Email"
                 ></input>
                 <button
-                  className="px-4 py-2 rounded-md shadow-md bg-white hover:shadow-lg hover:bg-gray-100"
+                  className="px-4 py-2 rounded-md shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');

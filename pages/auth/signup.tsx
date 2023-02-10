@@ -53,7 +53,7 @@ export default function SignupPage() {
 
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="relative flex flex-col items-center w-96 h-[28rem] bg-blue-200 p-8">
+      <div className="relative flex flex-col items-center w-96 h-[28rem] bg-blue-450 p-8">
         <Link href="/auth">
           <a className="absolute top-3 left-3 text-3xl">
             <ArrowBackIcon />
@@ -67,7 +67,7 @@ export default function SignupPage() {
             className="w-full rounded-lg p-2 border-[1px] border-gray-500"
             value={currentEmail}
             onChange={(e) => setCurrentEmail(e.target.value)}
-            style={{ backgroundColor: '#FFF' }}
+            style={{ backgroundColor: '#FFF2CE' }}
             placeholder="Email"
           ></input>
           <input
@@ -77,7 +77,7 @@ export default function SignupPage() {
             className="newPasswordInput w-full rounded-lg p-2 my-2 border-[1px] border-gray-500"
             value={currentPassword}
             onChange={(e) => setCurrentPassword(e.target.value)}
-            style={{ backgroundColor: '#FFF' }}
+            style={{ backgroundColor: '#FFF2CE' }}
             placeholder="Password"
           ></input>
           {/* Toggle visibility icons */}
@@ -93,7 +93,7 @@ export default function SignupPage() {
           </span>
         </form>
         <button
-          className="px-4 py-2 rounded-md shadow-md bg-white w-full hover:shadow-lg hover:bg-gray-100"
+          className="px-4 py-2 rounded-md shadow-md bg-orange-550 w-full hover:shadow-lg hover:bg-blue-450"
           onClick={() => signUp()}
         >
           Sign up
