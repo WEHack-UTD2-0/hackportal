@@ -167,7 +167,7 @@ export default function Home(props: {
               Adventure is Out There!
             </p>
             <p className="text-center md:text-2xl text-xl text-bold  text-[#d24a32]">
-              February 11th - 12th
+              March 30th - 31st
             </p>
           </div>
           <Image
