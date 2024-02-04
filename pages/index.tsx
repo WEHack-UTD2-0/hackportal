@@ -171,10 +171,10 @@ export default function Home(props: {
             </p>
           </div>
           <Image
-            src="https://wehackutd.com/images/logos/updated_wehack_logo.jpg"
-            alt="WEHack 2023 Logo"
-            width={370}
-            height={370}
+            src="https://wehackutd.com/images/logos/LogoSparkle.png"
+            alt="WEHack 2024 Logo"
+            width={400}
+            height={300}
           />
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
           <div className="flex flex-col items-center">
