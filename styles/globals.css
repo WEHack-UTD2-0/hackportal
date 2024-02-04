@@ -10,9 +10,21 @@ body {
   font-family: sans-serif;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'wavehaus';
   src: url('/fonts/Wavehaus-66Book.ttf') format('truetype');
+  font-display: auto;
+} */
+
+@font-face {
+  font-family: 'inknutAntiqua';
+  src: url('/fonts/2024 fonts/InknutAntiqua-Medium.ttf') format('truetype');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'nunito';
+  src: url('/fonts/2024 fonts/Nunito-Medium.ttf') format('truetype');
   font-display: auto;
 }
 
