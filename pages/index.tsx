@@ -162,9 +162,9 @@ export default function Home(props: {
             className="min-w-[280px] w-8/12 h-[250px] flex flex-col justify-center relative md:mb-30 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
-            <h1 className="text-center md:text-7xl text-4xl font-bold text-black">WEHack Portal</h1>
+            <h1 className="text-center md:text-7xl text-4xl font-bold text-black">WEHack 2024 Portal</h1>
             <p className="text-center my-4 md:text-4xl text-2xl italic text-yellow-250">
-              Adventure is Out There!
+              Enchanted to be Here
             </p>
             <p className="text-center md:text-2xl text-xl text-bold  text-[#d24a32]">
               March 30th - 31st
