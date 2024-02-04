@@ -11,6 +11,8 @@ module.exports = {
       fontFamily: {
         //sans: ['wavehaus'],
         lora: ['montserrat'],
+        inknutAntiqua: ["InknutAntiqua", "serif"],
+        nunito: ["Nunito", "sans-serif"]
       },
       width: {
         '1/8': '12.5%',

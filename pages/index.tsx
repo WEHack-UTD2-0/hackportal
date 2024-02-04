@@ -162,11 +162,11 @@ export default function Home(props: {
             className="min-w-[280px] w-8/12 h-[250px] flex flex-col justify-center relative md:mb-30 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
-            <h1 className="text-center md:text-7xl text-4xl font-bold text-black">WEHack 2024 Portal</h1>
-            <p className="text-center my-4 md:text-4xl text-2xl italic text-yellow-250">
+            <h1 className="text-center md:text-7xl text-4xl font-inknutAntiqua font-bold text-black">WEHack 2024 Portal</h1>
+            <p className="text-center my-4 md:text-4xl text-2xl italic text-yellow-250 font-nunito">
               Enchanted to be Here
             </p>
-            <p className="text-center md:text-2xl text-xl text-bold  text-[#d24a32]">
+            <p className="text-center md:text-2xl text-xl text-bold  text-[#d24a32] font-nunito">
               March 30th - 31st
             </p>
           </div>
@@ -178,12 +178,12 @@ export default function Home(props: {
           />
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
           <div className="flex flex-col items-center">
-            <p className="text-center my-4 md:font-bold md:text-xl text-x1 text-black-250">
+            <p className="text-center my-4 md:font-bold md:text-xl text-x1 text-black-250 font-inknutAntiqua">
               Click below to learn more about WEHack!
             </p>
             <a
               href="https://wehackutd.com/"
-              className="px-5 py-5 text-yellow-250 no-underline bg-orange-550 rounded hover:bg-orange-650 font-bold"
+              className="px-5 py-5 text-yellow-250 no-underline bg-orange-550 rounded hover:bg-orange-650 font-bold font-nunito"
             >
               wehackutd.com
             </a>
