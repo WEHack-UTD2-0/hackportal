@@ -216,7 +216,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
       <div className="flex flex-wrap lg:justify-between px-6 h-[75vh]">
         {/* Calender */}
         <div className="overflow-y-auto overflow-x-hidden lg:w-[62%] w-full h-full border-2 border-black rounded-md">
-          <Paper>
+          <Paper style={{ background: 'transparent' }}>
             <Scheduler data={props.scheduleCard}>
               <ViewState defaultCurrentDate={defaultCurrentDate} />
 
