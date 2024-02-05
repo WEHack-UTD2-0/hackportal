@@ -91,8 +91,8 @@ type TimeTableCellProps = MonthView.TimeTableCellProps & WithStyles<typeof style
 type DayScaleCellProps = MonthView.DayScaleCellProps & WithStyles<typeof styles>;
 
 const isWeekEnd = (date: Date): boolean => date.getDay() === 0 || date.getDay() === 6;
-const defaultCurrentDate = new Date(2023, 2, 30, 9, 0);
-// const defaultCurrentDate = new Date();
+//const defaultCurrentDate = new Date(2023, 2, 30, 9, 0);
+const defaultCurrentDate = new Date();
 
 const DayScaleCell = withStyles(styles)(
   ({ startDate, classes, ...restProps }: DayScaleCellProps) => (
@@ -158,9 +158,38 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
   });
 
   const Appointment = withStyles(styles)(
-    ({ onClick, classes, data, ...restProps }: AppointmentProps) => (
-      <Appointments.Appointment {...restProps} data={data} onClick={() => changeEventData(data)} />
-    ),
+    ({ onClick, classes, data, ...restProps }: AppointmentProps) => {
+      let appointmentColor;
+      switch (data.Event) {
+        case 1:
+          appointmentColor = 'green'; // Event color
+          break;
+        case 2:
+          appointmentColor = 'olive'; // Sponsor color
+          break;
+        case 3:
+          appointmentColor = 'blue'; // Replace with your color for Tech Talk
+          break;
+        case 4:
+          appointmentColor = '#CAE9FF'; // Workshop color
+          break;
+        case 5:
+          appointmentColor = '#BCBCDC'; // Social color
+          break;
+        default:
+          appointmentColor = 'lightgreen'; // Default color if event number doesn't match any case
+          break;
+      }
+
+      return (
+        <Appointments.Appointment
+          {...restProps}
+          data={data}
+          onClick={() => changeEventData(data)}
+          style={{ backgroundColor: appointmentColor }}
+        />
+      );
+    },
   );
 
   const changeEventData = (data) => {
@@ -226,7 +255,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
                 appointmentComponent={Appointment}
                 appointmentContentComponent={AppointmentContent}
               />
-              {/* <Resources data={resources} /> */}
+              {/*<Resources data={resources} /> */}
 
               <Toolbar />
               <DateNavigator />
