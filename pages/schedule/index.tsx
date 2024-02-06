@@ -375,7 +375,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
               </div>
             </div>
           </section>
-          {/*} <div className="fixed bottom-[5px] right-0 w-20 h-20 bg-Mascot bg-cover bg-no-repeat"></div>*/}
+          {/*} <div className="fixed bottom-[5px] right-0 w-20 h-20 bg-Mascot-1 bg-cover bg-no-repeat"></div>*/}
           <div className="text-right">*All events are given in CST</div>
         </div>
       </div>
