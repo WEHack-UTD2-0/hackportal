@@ -311,7 +311,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
 
         {/* Event info card */}
         <div
-          className="bg-green-200 overflow-y-auto flex flex-col justify-between lg:w-[36%] w-full h-full lg:my-2 my-2 border-2] rounded-md shadow-lg p-5"
+          className="bg-Event-border bg-cover bg-green-100 overflow-y-auto flex flex-col justify-between lg:w-[36%] w-full h-full lg:my-2 my-2 border-2] rounded-md shadow-lg p-10"
           style={{
             backgroundColor: appointmentColor,
             boxShadow: '0 0 10px 5px #FFE9D7',
@@ -320,7 +320,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
             height: '65vh',
           }}
         >
-          <div className="absolute bottom-5 left-0 w-20 h-20 bg-Mascot-2 bg-cover bg-no-repeat"></div>
+          {/*<div className="absolute bottom-5 left-0 w-20 h-20 bg-Mascot-2 bg-cover bg-no-repeat"></div>*/}
 
           <section>
             {eventData.title === '' ? (
@@ -375,7 +375,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
               </div>
             </div>
           </section>
-          <div className="fixed bottom-[5px] right-0 w-20 h-20 bg-Mascot bg-cover bg-no-repeat"></div>
+          {/*} <div className="fixed bottom-[5px] right-0 w-20 h-20 bg-Mascot bg-cover bg-no-repeat"></div>*/}
           <div className="text-right">*All events are given in CST</div>
         </div>
       </div>

@@ -9,6 +9,7 @@ module.exports = {
         'Background-image': 'url(../public/BG-darkColors.png)',
         Mascot: 'url(../public/mascot_1.png)',
         'Mascot-2': 'url(../public/mascot_2.png)',
+        'Event-border': 'url(../public/event_border.png)',
       },
       fontFamily: {
         //sans: ['wavehaus'],
