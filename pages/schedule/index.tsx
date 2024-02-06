@@ -282,8 +282,14 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
 
   return (
     <>
-      <div className="text-4xl font-bold p-3 text-white-100 ">Schedule</div>
-      <div className="flex flex-wrap lg:justify-between p-5 hide-scrollbar text-white-100 ">
+      <div
+        className="text-4xl font-bold p-3 text-white-100"
+        style={{ textShadow: '3px 2px #909634' }}
+      >
+        {' '}
+        Schedule
+      </div>
+      <div className="flex flex-wrap lg:justify-between p-5 hide-scrollbar text-white-100">
         {/* Calender */}
         <div
           className="overflow-y-auto overflow-x-hidden lg:w-[62%] w-full h-full border-2 border-white-100 rounded-md custom-scrollbar"
@@ -318,6 +324,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
             position: 'sticky',
             top: '15vh',
             height: '65vh',
+            textShadow: '5px 5px 5px #000000',
           }}
         >
           {/*<div className="absolute bottom-5 left-0 w-20 h-20 bg-Mascot-2 bg-cover bg-no-repeat"></div>*/}
