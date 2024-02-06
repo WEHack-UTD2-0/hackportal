@@ -7,6 +7,8 @@ module.exports = {
       backgroundImage: {
         'wehack-icon-2023': 'url(https://wehackutd.com/images/logos/updated_wehack_logo.jpg)',
         'Background-image': 'url(../public/BG-darkColors.png)',
+        Mascot: 'url(../public/mascot_1.png)',
+        'Mascot-2': 'url(../public/mascot_2.png)',
       },
       fontFamily: {
         //sans: ['wavehaus'],
