@@ -286,7 +286,6 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
         className="text-4xl font-bold p-3 text-white-100"
         style={{ textShadow: '3px 2px #909634' }}
       >
-        {' '}
         Schedule
       </div>
       <div className="flex flex-wrap lg:justify-between p-5 hide-scrollbar text-white-100">
@@ -327,8 +326,6 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
             textShadow: '5px 5px 5px #000000',
           }}
         >
-          {/*<div className="absolute bottom-5 left-0 w-20 h-20 bg-Mascot-2 bg-cover bg-no-repeat"></div>*/}
-
           <section>
             {eventData.title === '' ? (
               <div className="text-3xl text-white-100 rounded-md p-5">
@@ -382,7 +379,6 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
               </div>
             </div>
           </section>
-          {/*} <div className="fixed bottom-[5px] right-0 w-20 h-20 bg-Mascot-1 bg-cover bg-no-repeat"></div>*/}
           <div className="text-right">*All events are given in CST</div>
         </div>
       </div>
