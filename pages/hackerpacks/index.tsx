@@ -120,8 +120,8 @@ export default function HackerPack() {
       */}
 
       {/* Main content section */}
-      <section id="mainContent" className="px-6 py-3 w-3/4 md:wd-5/6 2xl:w-7/8 text-black">
-        <div className="font-bold text-2xl text-yellow-250 md:text-4xl lg-text-6xl">Resources</div>
+      <section id="mainContent" className="px-6 py-3 w-3/4 md:wd-5/6 2xl:w-7/8 text-white-100">
+        <div className="font-bold text-2xl md:text-4xl lg-text-6xl">Resources</div>
 
         {/*
         Document links 

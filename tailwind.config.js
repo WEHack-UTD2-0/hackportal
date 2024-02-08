@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'wehack-icon-2023': 'url(https://wehackutd.com/images/logos/updated_wehack_logo.jpg)',
-        'Background-image': 'url(../public/background.png)',
-        'wehack-icon-2024': 'url(../public/LogoSparkle.png)',
+        'Background-image': 'url(../public/BG-darkColors.png)',
+        'Event-border': 'url(../public/event_back.png)',
       },
       fontFamily: {
         //sans: ['wavehaus'],
@@ -81,7 +81,11 @@ module.exports = {
           250: '#FFF2CE',
         },
         green: {
-          550: '#909634',
+          100: '#909634',
+          200: '#556B2F',
+        },
+        white: {
+          100: '#FFE9D7',
         },
       },
 

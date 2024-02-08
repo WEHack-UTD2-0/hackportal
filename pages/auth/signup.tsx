@@ -53,7 +53,7 @@ export default function SignupPage() {
 
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="relative flex flex-col items-center w-96 h-[28rem] bg-green-550 p-8">
+      <div className="relative flex flex-col items-center w-96 h-[28rem] bg-green-100 p-8">
         <Link href="/auth">
           <a className="absolute top-3 left-3 text-3xl">
             <ArrowBackIcon />
@@ -93,7 +93,7 @@ export default function SignupPage() {
           </span>
         </form>
         <button
-          className="px-4 py-2 rounded-md shadow-md bg-yellow-250 w-full hover:shadow-lg hover:bg-green-550"
+          className="px-4 py-2 rounded-md shadow-md bg-yellow-250 w-full hover:shadow-lg hover:bg-green-100"
           onClick={() => signUp()}
         >
           Sign up

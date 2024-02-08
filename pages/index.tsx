@@ -165,7 +165,7 @@ export default function Home(props: {
             <h1 className="text-center md:text-7xl text-4xl font-inknutAntiqua font-bold text-yellow-250">
               WEHack 2024 Portal
             </h1>
-            <p className="text-center my-4 md:text-4xl text-2xl italic text-green-550 font-nunito">
+            <p className="text-center my-4 md:text-4xl text-2xl italic text-green-100 font-nunito">
               Enchanted to be Here
             </p>
             <p className="text-center md:text-2xl text-xl text-bold  text-[#FFE9D7] font-nunito">
@@ -177,16 +177,15 @@ export default function Home(props: {
             alt="WEHack 2024 Logo"
             width={400}
             height={300}
-            className="my-5"
           />
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
           <div className="flex flex-col items-center">
-            <p className="my-4 px-3 py-3 text-black no-underline bg-yellow-250 rounded hover:bg-green-550 font-bold font-inknutAntiqua">
+            <p className="my-4 px-3 py-3 text-black no-underline bg-yellow-250 rounded hover:bg-green-100 font-bold font-inknutAntiqua">
               Click below to learn more about WEHack!
             </p>
             <a
               href="https://wehackutd.com/"
-              className=" px-3 py-3 text-yellow-250 no-underline bg-green-550 rounded hover:bg-green-550 font-bold font-nunito"
+              className=" px-3 py-3 text-yellow-250 no-underline bg-green-100 rounded hover:bg-green-100 font-bold font-nunito"
             >
               wehackutd.com
             </a>
@@ -303,7 +302,7 @@ export default function Home(props: {
       </section>
 
       {/* Footer */}
-      <section className="bg-green-550 mt-16 px-6 py-8 md:text-base text-xs">
+      <section className="bg-green-100 mt-16 px-6 py-8 md:text-base text-xs">
         {/* Upper Content */}
         <div className="my-2 relative">
           {/* Social icons */}
@@ -337,7 +336,7 @@ export default function Home(props: {
           </div>
         </div>
         {/* Lower Content */}
-        <div className="flex justify-between border-t-[1px] py-2 border-black">
+        <div className="flex  justify-between border-t-[1px] py-2 border-black">
           <p>
             Designed by <p className="font-black inline">WEHack and HackUTD</p> <br />
             {/* PLEASE DO NOT CHANGE <3 */}

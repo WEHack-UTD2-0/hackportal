@@ -95,7 +95,7 @@ export default function AuthPage() {
             <div>
               <h1 className="text-3xl text-yellow-250">Login to your account</h1>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-green-550 my-4 text-lg font-bold hover:shadow-lg hover:bg-yellow-250"
+                className="px-4 py-2 rounded-md shadow-md bg-green-100 my-4 text-lg font-bold hover:shadow-lg hover:bg-yellow-250"
                 onClick={() => signInWithGoogle()}
               >
                 Sign in with Google
@@ -148,7 +148,7 @@ export default function AuthPage() {
                   </div>
                   <button
                     type="button"
-                    className="px-4 py-2 w-[24rem] rounded-md shadow-md bg-green-550 hover:shadow-lg hover:bg-yellow-250"
+                    className="px-4 py-2 w-[24rem] rounded-md shadow-md bg-green-100 hover:shadow-lg hover:bg-yellow-250"
                     onClick={() => {
                       signIn();
                     }}
@@ -189,7 +189,7 @@ export default function AuthPage() {
                   placeholder="Email"
                 ></input>
                 <button
-                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-yellow-250 hover:shadow-lg hover:bg-green-550"
+                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-yellow-250 hover:shadow-lg hover:bg-green-100"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');
@@ -197,13 +197,13 @@ export default function AuthPage() {
                 >
                   Send Reset Email
                 </button>
-                <div className="text-left text-green-550">{errorMsg}</div>
+                <div className="text-left text-green-100">{errorMsg}</div>
               </div>
             </div>
           )}
         </div>
         {/* Create new account sidebar*/}
-        <div className="flex flex-col justify-center items-center h-full w-1/3 bg-green-550 text-center p-4">
+        <div className="flex flex-col justify-center items-center h-full w-1/3 bg-green-100 text-center p-4">
           <h1 className="text-3xl font-black">Don&#39;t have an account?</h1>
           <p className="my-6">
             Create an account to apply to the hackathon and access user specific functionalities!
