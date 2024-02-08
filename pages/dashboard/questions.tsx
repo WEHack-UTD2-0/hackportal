@@ -169,7 +169,7 @@ export default function QuestionsPage() {
       <div className="px-4">
         <DashboardHeader />
       </div>
-      <div className="top-6 p-4 flex flex-col gap-y-3">
+      <div className="top-6 p-4 flex text-green-100 flex-col gap-y-3">
         <h4 className="font-bold text-3xl">Ask the organizers a question!</h4>
         <div>
           <textarea
@@ -177,14 +177,14 @@ export default function QuestionsPage() {
             rows={5}
             value={currentQuestion}
             onChange={(e) => setCurrentQuestion(e.target.value)}
-            style={{ backgroundColor: '#F2F3FF' }}
+            style={{ backgroundColor: '#FFE9D7' }}
             placeholder="Type your question here"
           ></textarea>
           <div className="flex flex-row justify-end my-4">
             <button
               type="button"
               className="p-2 rounded-lg"
-              style={{ backgroundColor: '#e0a269', color: 'black' }}
+              style={{ backgroundColor: '#909634', color: 'black' }}
               onClick={() => {
                 submitQuestion();
               }}

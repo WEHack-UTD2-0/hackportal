@@ -140,7 +140,7 @@ export default function Dashboard(props: {
             )}
             {/* Announcements */}
             <div className="lg:w-2/5 w-full h-96">
-              <h1 className="md:text-3xl text-xl font-bold text-black">Announcements</h1>
+              <h1 className="md:text-3xl text-xl font-bold text-yellow-250">Announcements</h1>
               <div id="announcement-items" className="overflow-y-scroll h-9/10">
                 {announcements.map((announcement, idx) => {
                   const dateObj = new Date(announcement.timestamp!);
@@ -161,9 +161,9 @@ export default function Dashboard(props: {
 
           {/* Challenges */}
           <div className="flex flex-col items-center my-8">
-            <h1 className="md:text-3xl text-xl font-black text-black">Challenges</h1>
+            <h1 className="md:text-3xl text-xl text-yellow-250">Challenges</h1>
             {/* Cards */}
-            <div className="challengeGrid my-8">
+            <div className="challengeGrid my-8 text-yellow-250">
               {challenges.map(({ title, description, prizes }, idx) => (
                 <ChallengeCard key={idx} title={title} description={description} prizes={prizes} />
               ))}
