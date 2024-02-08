@@ -124,7 +124,7 @@ a.link {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 
-  border-left: 10px solid rgb(233 213 255);
+  border-left: 10px solid rgb(bg-yellow-250);
 }
 
 /* Safari key icon for sign up password field */

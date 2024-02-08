@@ -107,7 +107,7 @@ export default function Register() {
   }
 
   return (
-    <div className="flex flex-col flex-grow bg-white">
+    <div className=" flex-col mx-40 bg-yellow-250 text-green-200 rounded-lg">
       <Head>
         <title>Hacker Registration</title>
         <meta name="description" content="Register for [HACKATHON NAME]" />
@@ -452,7 +452,7 @@ export default function Register() {
               <div className="my-8">
                 <button
                   type="submit"
-                  className="mr-auto cursor-pointer px-4 py-2 rounded-md bg-blue-200 hover:bg-blue-300"
+                  className="mr-auto cursor-pointer px-4 py-2 text-yellow-250 rounded-md bg-green-100 hover:bg-green-200"
                   onClick={() => setFormValid(!(!isValid || !dirty))}
                 >
                   Submit
