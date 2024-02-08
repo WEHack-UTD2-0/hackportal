@@ -74,7 +74,7 @@ export default function AppHeader() {
   return (
     <>
       <div className="min-h-[5rem]"></div>
-      <header className="top-0 fixed justify-between flex flex-row w-full bg-orange-550 items-center h-16 z-10 p-4">
+      <header className="top-0 fixed justify-between flex flex-row w-full bg-transparent items-center h-16 z-10 p-4">
         <div className="flex w-6/12 max-w-[156px] justify-between items-center md:max-w-full md:justify-start md:w-9/12">
           <Link href="/">
             <a className="flex order-2 relative ml-[-6px] font-display self-center items-center w-[120px] md:order-1 md:ml-0 md:w-[120px]">
@@ -99,7 +99,7 @@ export default function AppHeader() {
             </ul>
           </div>
           {/* PC nav */}
-          <div className="hidden text-xs order-2 md:flex items-center md:text-left lg:ml-6">
+          <div className="hidden text-yellow-250 text-xs order-2 md:flex items-center md:text-left lg:ml-6">
             {dynamicNavItems.map((item) => (
               <Link key={item.text} href={item.path}>
                 <a>
@@ -111,7 +111,7 @@ export default function AppHeader() {
         </div>
         <div className="flex lg:mr-8">
           <button
-            className="font-header font-bold bg-yellow-250 rounded-full border-2 border-black text-sm px-8 py-1"
+            className="font-header font-bold bg-yellow-250 rounded-full border-2 border-green-550 text-sm px-8 py-1"
             onClick={toggleDialog}
           >
             {!user || !isSignedIn ? 'Sign in' : hasProfile ? 'Profile' : 'Register'}

@@ -83,7 +83,9 @@ export default function Dashboard(props: {
 
   if (!isSignedIn)
     return (
-      <div className="text-2xl font-black text-center">Please sign-in to view your dashboard</div>
+      <div className="text-2xl text-yellow-250 text-center">
+        Please sign-in to view your dashboard
+      </div>
     );
 
   return (

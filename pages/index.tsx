@@ -139,7 +139,7 @@ export default function Home(props: {
   return (
     <>
       <Head>
-        <title>WEHack HackPortal</title>
+        <title className="text-[#FFE9D7]">WEHack HackPortal</title>
         <meta name="description" content="A WEHack HackPortal instance" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -162,28 +162,25 @@ export default function Home(props: {
             className="min-w-[280px] w-8/12 h-[250px] flex flex-col justify-center relative md:mb-30 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent
           after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent"
           >
-            <h1 className="text-center md:text-7xl text-4xl font-bold text-black">WEHack Portal</h1>
-            <p className="text-center my-4 md:text-4xl text-2xl italic text-yellow-250">
-              Adventure is Out There!
+            <h1 className="text-center md:text-7xl text-4xl font-bold text-yellow-250">
+              WEHack Portal
+            </h1>
+            <p className="text-center my-4 md:text-4xl text-2xl italic text-green-550">
+              Enchanted to be Here!
             </p>
-            <p className="text-center md:text-2xl text-xl text-bold  text-[#d24a32]">
+            <p className="text-center md:text-2xl text-xl text-bold  text-[#FFE9D7]">
               March 30th - 31st
             </p>
           </div>
-          <Image
-            src="https://wehackutd.com/images/logos/updated_wehack_logo.jpg"
-            alt="WEHack 2023 Logo"
-            width={370}
-            height={370}
-          />
+          <Image src="/../public/LogoSparkle.png" alt="WEHack 2023 Logo" width={370} height={370} />
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
           <div className="flex flex-col items-center">
-            <p className="text-center my-4 md:font-bold md:text-xl text-x1 text-black-250">
+            <p className="text-center my-4 md:font-bold md:text-xl text-x1 text-yellow-250">
               Click below to learn more about WEHack!
             </p>
             <a
               href="https://wehackutd.com/"
-              className="px-5 py-5 text-yellow-250 no-underline bg-orange-550 rounded hover:bg-orange-650 font-bold"
+              className="px-5 py-5 text-black no-underline bg-yellow-250 rounded hover:bg-orange-650 font-bold"
             >
               wehackutd.com
             </a>
@@ -223,7 +220,7 @@ export default function Home(props: {
     */}
       {/* Keynotes speakers */}
       <section className="flex overflow-x-scroll min-h-[24rem]">
-        <div className="flex items-center justify-center md:p-12 p-6 max-w-[18rem] text-2xl font-bold text-black">
+        <div className="flex items-center justify-center md:p-12 p-6 max-w-[18rem] text-2xl font-bold text-yellow-250">
           Keynote Speakers
         </div>
         <div className="flex flex-col justify-center py-6 md:px-6 ">
@@ -261,7 +258,7 @@ export default function Home(props: {
       </section>
       {/* Challenges */}
       <section className="p-6">
-        <div className="font-bold text-2xl text-black">Challenges</div>
+        <div className="font-bold text-2xl text-yellow-250">Challenges</div>
         <div className="flex">
           {/* Challenge Orgs Selectors*/}
           <div className="md:w-1/4 w-1/5">
@@ -300,7 +297,7 @@ export default function Home(props: {
       </section>
 
       {/* Footer */}
-      <section className="bg-orange-550 mt-16 px-6 py-8 md:text-base text-xs">
+      <section className="bg-green-550 mt-16 px-6 py-8 md:text-base text-xs">
         {/* Upper Content */}
         <div className="my-2 relative">
           {/* Social icons */}

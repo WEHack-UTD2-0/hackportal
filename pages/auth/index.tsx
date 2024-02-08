@@ -93,9 +93,9 @@ export default function AuthPage() {
         <div className="flex flex-col justify-center items-center h-full w-2/3 text-center p-4">
           {!passwordResetDialog ? (
             <div>
-              <h1 className="text-3xl font-black">Login to your account</h1>
+              <h1 className="text-3xl text-yellow-250">Login to your account</h1>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-orange-550 my-4 text-lg font-bold hover:shadow-lg hover:bg-blue-450"
+                className="px-4 py-2 rounded-md shadow-md bg-green-550 my-4 text-lg font-bold hover:shadow-lg hover:bg-yellow-250"
                 onClick={() => signInWithGoogle()}
               >
                 Sign in with Google
@@ -105,10 +105,10 @@ export default function AuthPage() {
               <div className="w-[24rem]">
                 <form onSubmit={handleSubmit}>
                   <input
-                    className="w-full rounded-lg p-2 border-[1px] border-gray-500"
+                    className="w-full rounded-lg p-2 border-[1px] bg-yellow-250 border-gray-500"
                     value={currentEmail}
                     onChange={(e) => setCurrentEmail(e.target.value)}
-                    style={{ backgroundColor: '#FFF2CE' }}
+                    style={{ backgroundColor: '#FFE9D7' }}
                     type="text"
                     name="email"
                     autoComplete="email"
@@ -119,7 +119,7 @@ export default function AuthPage() {
                     className="w-full rounded-lg p-2 my-2 border-[1px] border-gray-500"
                     value={currentPassword}
                     onChange={(e) => setCurrentPassword(e.target.value)}
-                    style={{ backgroundColor: '#FFF2CE' }}
+                    style={{ backgroundColor: '#FFE9D7' }}
                     type="password"
                     name="password"
                     autoComplete="current-password"
@@ -127,7 +127,7 @@ export default function AuthPage() {
                   ></input>
                   <div className="flex justify-between">
                     <div
-                      className="hover:underline cursor-pointer text-left"
+                      className="hover:underline cursor-pointer text-left text-yellow-250"
                       onClick={() => {
                         setPasswordResetDialog(true);
                         setErrorMsg('');
@@ -138,7 +138,7 @@ export default function AuthPage() {
                     </div>
                     <div>
                       <input
-                        className="mx-1"
+                        className="mx-1 text-yellow-250"
                         type="checkbox"
                         onClick={() => showPassword('passwordInputLg')}
                       />
@@ -148,7 +148,7 @@ export default function AuthPage() {
                   </div>
                   <button
                     type="button"
-                    className="px-4 py-2 w-[24rem] rounded-md shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450"
+                    className="px-4 py-2 w-[24rem] rounded-md shadow-md bg-green-550 hover:shadow-lg hover:bg-yellow-250"
                     onClick={() => {
                       signIn();
                     }}
@@ -179,17 +179,17 @@ export default function AuthPage() {
                   }}
                 />
               </div>
-              <h1 className="text-3xl font-black">Reset Password</h1>
+              <h1 className="text-3xl text-yellow-250">Reset Password</h1>
               <div className="w-[24rem]">
                 <input
-                  className="w-full rounded-lg p-2 border-[1px] border-gray-500 mt-8 mb-4"
+                  className="text-yellow-250 w-full rounded-lg p-2 border-[1px] border-gray-500 mt-8 mb-4"
                   value={currentEmail}
                   onChange={(e) => setCurrentEmail(e.target.value)}
                   style={{ backgroundColor: 'transparent' }}
                   placeholder="Email"
                 ></input>
                 <button
-                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450"
+                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-yellow-250 hover:shadow-lg hover:bg-green-550"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');
@@ -197,19 +197,19 @@ export default function AuthPage() {
                 >
                   Send Reset Email
                 </button>
-                <div className="text-left">{errorMsg}</div>
+                <div className="text-left text-green-550">{errorMsg}</div>
               </div>
             </div>
           )}
         </div>
         {/* Create new account sidebar*/}
-        <div className="flex flex-col justify-center items-center h-full w-1/3 bg-blue-450 text-center p-4">
+        <div className="flex flex-col justify-center items-center h-full w-1/3 bg-green-550 text-center p-4">
           <h1 className="text-3xl font-black">Don&#39;t have an account?</h1>
           <p className="my-6">
             Create an account to apply to the hackathon and access user specific functionalities!
           </p>
           <Link href="/auth/signup">
-            <a className="px-4 py-2 rounded-xl shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450">
+            <a className="px-4 py-2 rounded-xl shadow-md bg-yellow-250 hover:shadow-lg hover:bg-yellow-250">
               Sign up
             </a>
           </Link>
@@ -222,12 +222,12 @@ export default function AuthPage() {
           {!passwordResetDialog ? (
             <>
               {/* Main Login Screen */}
-              <h1 className="text-2xl font-black text-center">WEHack HackPortal</h1>
+              <h1 className="text-2xl font-yellow-250 text-center">WEHack HackPortal</h1>
               <p className="text-sm text-center">
                 Log in to continue or create an account to register
               </p>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-orange-550 my-4 font-bold hover:shadow-lg hover:bg-blue-450"
+                className="px-4 py-2 rounded-md shadow-md bg-yellow-250 my-4 font-bold hover:shadow-lg hover:bg-yellow-250"
                 onClick={() => signInWithGoogle()}
               >
                 Sign in with Google
@@ -240,7 +240,7 @@ export default function AuthPage() {
                     className="w-full rounded-lg p-2 border-[1px] "
                     value={currentEmail}
                     onChange={(e) => setCurrentEmail(e.target.value)}
-                    style={{ backgroundColor: '#FFF2CE' }}
+                    style={{ backgroundColor: '#FFE9D7' }}
                     type="text"
                     name="email"
                     autoComplete="email"
@@ -251,7 +251,7 @@ export default function AuthPage() {
                     className="passwordInput w-full rounded-lg p-2 my-2 border-[1px]"
                     value={currentPassword}
                     onChange={(e) => setCurrentPassword(e.target.value)}
-                    style={{ backgroundColor: '#FFF2CE' }}
+                    style={{ backgroundColor: '#FFE9D7' }}
                     type="password"
                     name="password"
                     autoComplete="current-password"
@@ -269,7 +269,7 @@ export default function AuthPage() {
                 Show Password
               </div>
               <button
-                className="px-4 py-2 rounded-md shadow-md bg-orange-550 w-5/6 hover:shadow-lg hover:bg-blue-450"
+                className="px-4 py-2 rounded-md shadow-md bg-yellow-250 w-5/6 hover:shadow-lg hover:bg-yellow-250"
                 onClick={() => signIn()}
               >
                 Sign in
