@@ -30,14 +30,14 @@ body {
 
 .MuiTypography-root {
   font-family: 'nunito' !important;
-  src: url('/fonts/Nunito-Regular.ttf') format('truetype') !important;
+  src: url('/fonts/2024 fonts/Nunito-Regular.ttf') format('truetype') !important;
   font-display: auto !important;
   font-weight: 600 !important;
 }
 
 .Target-root {
   font-family: 'nunito' !important;
-  src: url('/fonts/Nunito-Regular.ttf') format('truetype') !important;
+  src: url('/fonts/2024 fonts/Nunito-Regular.ttf') format('truetype') !important;
   font-display: auto !important;
 }
 
