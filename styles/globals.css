@@ -29,15 +29,15 @@ body {
 }
 
 .MuiTypography-root {
-  font-family: 'wavehaus' !important;
-  src: url('/fonts/Wavehaus-66Book.ttf') format('truetype') !important;
+  font-family: 'nunito' !important;
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype') !important;
   font-display: auto !important;
   font-weight: 600 !important;
 }
 
 .Target-root {
-  font-family: 'wavehaus' !important;
-  src: url('/fonts/Wavehaus-66Book.ttf') format('truetype') !important;
+  font-family: 'nunito' !important;
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype') !important;
   font-display: auto !important;
 }
 
@@ -51,7 +51,7 @@ a.link {
 }
 
 .element {
-  font-family: 'wavehaus';
+  font-family: 'nunito';
 }
 
 .profile-view {
