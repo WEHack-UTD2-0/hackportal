@@ -94,6 +94,7 @@ a.link {
 }
 
 @media (max-width: 1024px) {
+
   /* Home page video scaling */
   .video {
     zoom: 0.85;
@@ -163,4 +164,31 @@ a.link {
 
 .footerIcon {
   transform: scale(1.5);
+}
+
+.css-17r3ykr .MainLayout-stickyElement {
+  background: transparent !important;
+}
+
+.css-17r3ykr .MainLayout-background {
+  background: transparent !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #909634;
+
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #FFE9D7;
+
 }

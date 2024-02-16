@@ -74,13 +74,15 @@ const styles = ({ palette }: Theme) =>
       overflow: 'hidden',
       textOverflow: 'ellipsis',
       whiteSpace: 'nowrap',
+      color: 'white-100',
+      fontSize: '1.3em',
     },
     content: {
-      opacity: 0.7,
+      opacity: 0.8,
     },
     container: {
       width: '100%',
-      lineHeight: 1.2,
+      lineHeight: 1.5,
       height: '100%',
     },
   });
@@ -91,8 +93,8 @@ type TimeTableCellProps = MonthView.TimeTableCellProps & WithStyles<typeof style
 type DayScaleCellProps = MonthView.DayScaleCellProps & WithStyles<typeof styles>;
 
 const isWeekEnd = (date: Date): boolean => date.getDay() === 0 || date.getDay() === 6;
-const defaultCurrentDate = new Date(2023, 2, 30, 9, 0);
-// const defaultCurrentDate = new Date();
+//const defaultCurrentDate = new Date(2023, 2, 30, 9, 0);
+const defaultCurrentDate = new Date();
 
 const DayScaleCell = withStyles(styles)(
   ({ startDate, classes, ...restProps }: DayScaleCellProps) => (
@@ -158,10 +160,56 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
   });
 
   const Appointment = withStyles(styles)(
-    ({ onClick, classes, data, ...restProps }: AppointmentProps) => (
-      <Appointments.Appointment {...restProps} data={data} onClick={() => changeEventData(data)} />
-    ),
+    ({ onClick, classes, data, ...restProps }: AppointmentProps) => {
+      let appointmentColor;
+      let borderColorStyle;
+      switch (data.Event) {
+        case 1:
+          appointmentColor = '#4f473b'; // Event color
+          borderColorStyle = '#4f473b';
+          break;
+        case 2:
+          appointmentColor = '#1A441B'; // Sponsor color
+          borderColorStyle = '#1A441B';
+          break;
+        case 3:
+          appointmentColor = '#4A3628'; // Replace with your color for Tech Talk
+          borderColorStyle = '#4A3628';
+          break;
+        case 4:
+          appointmentColor = '#909634'; // Workshop color
+          borderColorStyle = '#909634';
+          break;
+        case 5:
+          appointmentColor = '#693230'; // Social color
+          borderColorStyle = '#693230';
+          break;
+        default:
+          appointmentColor = 'lightgreen'; // Default color if event number doesn't match any case
+          borderColorStyle = 'lightgreen';
+          break;
+      }
+
+      const boxShadowStyle = '0 0 7px 3px #000000';
+
+      return (
+        <Appointments.Appointment
+          {...restProps}
+          data={data}
+          onClick={() => changeEventData(data)}
+          style={{
+            backgroundColor: appointmentColor,
+            boxShadow: boxShadowStyle,
+            borderColor: borderColorStyle,
+            borderWidth: '2px',
+            borderStyle: 'solid',
+          }}
+        />
+      );
+    },
   );
+
+  const [appointmentColor, setAppointmentColor] = useState<string>('');
 
   const changeEventData = (data) => {
     const startDate = new firebase.firestore.Timestamp(data.startTimestamp._seconds, 0).toDate();
@@ -198,6 +246,28 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
       endDate.getHours() < 12 ? 'AM' : 'PM'
     }`;
 
+    // Get the appointment color based on the event type
+    switch (data.Event) {
+      case 1:
+        setAppointmentColor('#4f473b'); // Event color #566427
+        break;
+      case 2:
+        setAppointmentColor('#1A441B'); // Sponsor color
+        break;
+      case 3:
+        setAppointmentColor('#4A3628'); // Tech Talk
+        break;
+      case 4:
+        setAppointmentColor('#909634'); // Workshop color
+        break;
+      case 5:
+        setAppointmentColor('#693230'); // Social color
+        break;
+      default:
+        setAppointmentColor('lightgreen');
+        break;
+    }
+
     //setting new event data based on event clicked
     setEventData({
       title: data.title,
@@ -212,11 +282,19 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
 
   return (
     <>
-      <div className="text-4xl font-bold p-6">Schedule</div>
-      <div className="flex flex-wrap lg:justify-between px-6 h-[75vh]">
+      <div
+        className="text-4xl font-bold p-3 text-white-100"
+        style={{ textShadow: '3px 2px #909634' }}
+      >
+        Schedule
+      </div>
+      <div className="flex flex-wrap lg:justify-between p-5 hide-scrollbar text-white-100">
         {/* Calender */}
-        <div className="overflow-y-auto overflow-x-hidden lg:w-[62%] w-full h-full border-2 border-black rounded-md">
-          <Paper>
+        <div
+          className="overflow-y-auto overflow-x-hidden lg:w-[62%] w-full h-full border-2 border-white-100 rounded-md custom-scrollbar"
+          style={{ boxShadow: '0 0 10px 5px #000000' }}
+        >
+          <Paper style={{ backgroundColor: '#FFE9D7' }}>
             <Scheduler data={props.scheduleCard}>
               <ViewState defaultCurrentDate={defaultCurrentDate} />
 
@@ -226,7 +304,7 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
                 appointmentComponent={Appointment}
                 appointmentContentComponent={AppointmentContent}
               />
-              {/* <Resources data={resources} /> */}
+              {/*<Resources data={resources} /> */}
 
               <Toolbar />
               <DateNavigator />
@@ -237,10 +315,22 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
         </div>
 
         {/* Event info card */}
-        <div className="overflow-y-auto flex flex-col justify-between lg:w-[36%] w-full h-full lg:my-0 my-2 border-2 border-black rounded-md bg-blue-450 p-4">
+        <div
+          className="bg-Event-border bg-cover bg-green-100 overflow-y-auto flex flex-col justify-between lg:w-[36%] w-full h-full lg:my-2 my-2 border-2] rounded-md shadow-lg p-10"
+          style={{
+            backgroundColor: appointmentColor,
+            boxShadow: '0 0 10px 5px #FFE9D7',
+            position: 'sticky',
+            top: '15vh',
+            height: '65vh',
+            textShadow: '5px 5px 5px #000000',
+          }}
+        >
           <section>
             {eventData.title === '' ? (
-              <div className="text-2xl">Click on an event for more info</div>
+              <div className="text-3xl text-white-100 rounded-md p-5">
+                Click on an event for more info
+              </div>
             ) : (
               <div />
             )}
@@ -289,7 +379,6 @@ export default function Calendar(props: { scheduleCard: ScheduleEvent[] }) {
               </div>
             </div>
           </section>
-
           <div className="text-right">*All events are given in CST</div>
         </div>
       </div>
