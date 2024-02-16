@@ -56,7 +56,7 @@ export default function FaqPage({ fetchedFaqs }: { fetchedFaqs: AnsweredQuestion
               onClick={() => {
                 expandAll();
               }}
-              className="font-bold"
+              className="font-bold text-yellow-250"
             >
               Expand All
             </button>

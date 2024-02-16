@@ -163,14 +163,14 @@ export default function HackerPack() {
         */}
 
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-lg md:text-xl lg:text-3xl mb-4 text-yellow-250">
             {' '}
             <DocLink
               title="WEHack Hacker Guide"
               link="https://ultra-spell-68d.notion.site/WEHack-2023-Hacker-Guide-a660e7d4946e4a25b680846a45d5ce3d"
             />
           </div>
-          <p>More information about WEHack.</p>
+          <p className="text-yellow-250">More information about WEHack.</p>
           <p></p>
           <p>
             <br></br>
@@ -179,7 +179,7 @@ export default function HackerPack() {
 
         {/* Section 1 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className=" text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="Ultimate 8 Step Guide to Winning Hackathons"
@@ -187,7 +187,7 @@ export default function HackerPack() {
             />
           </div>
 
-          <p>
+          <p className="text-yellow-250">
             What Gary-Yau Chan learned after 55 Hackathons, and what we think can help you succeed!
             Click on the link above to learn more.
           </p>
@@ -198,12 +198,14 @@ export default function HackerPack() {
 
         {/* Section 2 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink title="SWE Website" link="https://sweutd.com/" />
           </div>
 
-          <p>Check out sweutd.com for some ideas! Click on the link above to learn more.</p>
+          <p className="text-yellow-250">
+            Check out sweutd.com for some ideas! Click on the link above to learn more.
+          </p>
           <p>
             <br></br>
           </p>
@@ -211,7 +213,7 @@ export default function HackerPack() {
 
         {/* Section 3 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="WEHack 2022 Projects"
@@ -219,7 +221,7 @@ export default function HackerPack() {
             />
           </div>
 
-          <p>
+          <p className="text-yellow-250">
             View projects from the last iteration of WEHack to get inspired! Click on the link above
             to learn more.
           </p>
@@ -230,7 +232,7 @@ export default function HackerPack() {
 
         {/* Section 4 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <DocLink
               title="WEHack 2020 Projects"
@@ -238,7 +240,7 @@ export default function HackerPack() {
             />
           </div>
 
-          <p>
+          <p className="text-yellow-250">
             View projects from the first iteration of WEHack to get inspired! Click on the link
             above to learn more.
           </p>
@@ -249,7 +251,7 @@ export default function HackerPack() {
 
         {/* Section 4 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <p>HackUTD Workshop</p>
           </div>
@@ -257,7 +259,7 @@ export default function HackerPack() {
 
         {/* Section 5 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-1xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-1xl mb-4">
             {' '}
             <DocLink title="Node JS Tutorial" link="https://www.javatpoint.com/nodejs-tutorial" />
             <DocLink title="HTML/CSS/JS Reference" link="https://www.w3schools.com/" />
@@ -267,7 +269,7 @@ export default function HackerPack() {
 
         {/* Section 6 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-3xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
             <p>Code Quantum Workshop</p>
           </div>
@@ -275,7 +277,7 @@ export default function HackerPack() {
 
         {/* Section 7 */}
         <div id="Subsection1" className="my-7">
-          <div className="text-lg md:text-xl lg:text-1xl mb-4">
+          <div className="text-yellow-250 text-lg md:text-xl lg:text-1xl mb-4">
             {' '}
             <DocLink title="Download Ren'Py" link="https://www.renpy.org/latest.html" />
             <DocLink

@@ -82,7 +82,7 @@ export default function Scan() {
             <QRCode data={qrData} loading={qrLoading} width={200} height={200} />
           </div>
         ) : (
-          <div className="top-6 flex justify-center md:text-lg text-base">
+          <div className="top-6 flex justify-center text-green-100 md:text-lg text-base">
             <h4>Please register to get your QR code</h4>
           </div>
         )}
