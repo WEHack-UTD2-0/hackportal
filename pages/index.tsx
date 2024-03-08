@@ -169,7 +169,7 @@ export default function Home(props: {
               Enchanted to be Here
             </p>
             <p className="text-center md:text-2xl text-xl text-bold  text-[#FFE9D7] font-nunito">
-              March 30th - 31st
+              March 23rd - 24th
             </p>
           </div>
           <Image
