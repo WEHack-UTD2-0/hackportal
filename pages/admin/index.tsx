@@ -85,7 +85,9 @@ export default function Admin({ questions }: { questions: QADocument[] }) {
             <SuccessCard msg="Announcement posted successfully" />
           </div>
         )}
-        <h1 className="font-bold text-xl">Post Announcement: </h1>
+        <h1 className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+          Post Announcement:{' '}
+        </h1>
         <textarea
           value={announcement}
           onChange={(e) => setAnnouncement(e.target.value)}
@@ -108,7 +110,9 @@ export default function Admin({ questions }: { questions: QADocument[] }) {
         </div>
       </div>
       <div className="p-6">
-        <h1 className="font-bold text-xl">Pending Questions: </h1>
+        <h1 className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+          Pending Questions:{' '}
+        </h1>
         {questions.map((question, idx) => (
           <Link key={idx} passHref href={`/admin/resolve/${question.id}`}>
             <a>
