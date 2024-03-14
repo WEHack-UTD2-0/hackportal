@@ -24,7 +24,9 @@ export default function ProfilePage() {
   return (
     <div className="p-8 w-full">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold">User Profile</h1>
+        <h1 className="text-3xl font-bold" style={{ color: '#FFE9D7' }}>
+          User Profile
+        </h1>
         <section className="w-full py-5">
           <div className="flex flex-col md:flex-row gap-x-10">
             <div
@@ -51,24 +53,45 @@ export default function ProfilePage() {
             <div className="w-full my-5">
               <div className="profile-view">
                 <div className="profile-view-name flex flex-col gap-y-2">
-                  <div className="font-bold text-xl">Name</div>
-                  <h1 className="font-bold">{`${profile.user.firstName} ${profile.user.lastName}`}</h1>
+                  <div className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+                    Name
+                  </div>
+                  <h1
+                    className="font-bold"
+                    style={{ color: '#FFE9D7' }}
+                  >{`${profile.user.firstName} ${profile.user.lastName}`}</h1>
                 </div>
                 <div className="profile-view-role flex flex-col gap-y-2">
-                  <div className="font-bold text-xl">Role</div>
-                  <h1 className="font-bold">{profile.user.permissions[0]}</h1>
+                  <div className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+                    Role
+                  </div>
+                  <h1 className="font-bold" style={{ color: '#FFE9D7' }}>
+                    {profile.user.permissions[0]}
+                  </h1>
                 </div>
                 <div className="profile-view-univ flex flex-col gap-y-2">
-                  <div className="font-bold text-xl">University</div>
-                  <h1 className="font-bold">{profile.university}</h1>
+                  <div className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+                    University
+                  </div>
+                  <h1 className="font-bold" style={{ color: '#FFE9D7' }}>
+                    {profile.university}
+                  </h1>
                 </div>
                 <div className="profile-view-major flex flex-col gap-y-2">
-                  <div className="font-bold text-xl">Major</div>
-                  <h1 className="font-bold">{profile.major}</h1>
+                  <div className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+                    Major
+                  </div>
+                  <h1 className="font-bold" style={{ color: '#FFE9D7' }}>
+                    {profile.major}
+                  </h1>
                 </div>
                 <div className="profile-view-stlvl flex flex-col gap-y-2">
-                  <div className="font-bold text-xl">Level of Study</div>
-                  <h1 className="font-bold">{profile.studyLevel}</h1>
+                  <div className="font-bold text-xl" style={{ color: '#FFE9D7' }}>
+                    Level of Study
+                  </div>
+                  <h1 className="font-bold" style={{ color: '#FFE9D7' }}>
+                    {profile.studyLevel}
+                  </h1>
                 </div>
               </div>
             </div>

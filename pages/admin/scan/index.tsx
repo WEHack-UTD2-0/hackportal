@@ -324,7 +324,9 @@ export default function Admin() {
       ) : (
         <>
           <div className="flex flex-col justify-center top-6">
-            <div className="text-2xl font-black text-center">Scan Types</div>
+            <div className="text-2xl font-black text-center" style={{ color: '#FFE9D7' }}>
+              Scan Types
+            </div>
             <div className="flex flex-row flex-wrap justify-center top-6">
               {scansFetched ? (
                 scanTypes.map((d, idx) => (

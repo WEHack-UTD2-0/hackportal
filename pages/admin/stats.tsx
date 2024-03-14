@@ -53,7 +53,10 @@ export default function AdminStatsPage() {
       </Head>
       <AdminHeader />
       <div className="w-full xl:w-3/5 mx-auto p-6 flex flex-col gap-y-6">
-        <div className="flex-col gap-y-3 w-full md:flex-row flex justify-around gap-x-2">
+        <div
+          className="flex-col gap-y-3 w-full md:flex-row flex justify-around gap-x-2"
+          style={{ color: '#FFE9D7' }}
+        >
           <AdminStatsCard icon={<CheckIcon />} title="Check-Ins" value={statsData.checkedInCount} />
           <AdminStatsCard
             icon={<AccountCircleIcon />}
