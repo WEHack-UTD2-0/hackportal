@@ -167,7 +167,7 @@ export default function HackerPack() {
             {' '}
             <DocLink
               title="WEHack Hacker Guide"
-              link="https://ultra-spell-68d.notion.site/WEHack-2023-Hacker-Guide-a660e7d4946e4a25b680846a45d5ce3d"
+              link="https://ultra-spell-68d.notion.site/WEHack-2024-Hacker-Guide-f92323a00a724c3aaea44d620e573f0c?pvs=4"
             />
           </div>
           <p className="text-yellow-250">More information about WEHack.</p>
@@ -200,11 +200,15 @@ export default function HackerPack() {
         <div id="Subsection1" className="my-7">
           <div className="text-yellow-250 text-lg md:text-xl lg:text-3xl mb-4">
             {' '}
-            <DocLink title="SWE Website" link="https://sweutd.com/" />
+            <DocLink
+              title="WEHack 2023 Projects"
+              link="https://wehack-2023.devpost.com/project-gallery"
+            />
           </div>
 
           <p className="text-yellow-250">
-            Check out sweutd.com for some ideas! Click on the link above to learn more.
+            View projects from the last iteration of WEHack to get inspired! Click on the link above
+            to learn more..
           </p>
           <p>
             <br></br>
@@ -222,7 +226,7 @@ export default function HackerPack() {
           </div>
 
           <p className="text-yellow-250">
-            View projects from the last iteration of WEHack to get inspired! Click on the link above
+            View projects from the 2022 iteration of WEHack to get inspired! Click on the link above
             to learn more.
           </p>
           <p>
