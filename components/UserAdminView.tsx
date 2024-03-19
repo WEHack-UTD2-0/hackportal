@@ -77,7 +77,7 @@ export default function UserAdminView({
         Go back to User List
       </button>
       <div className="w-full my-5 p-4">
-        <div className="profile-view">
+        <div className="profile-view" style={{ color: '#FFE9D7' }}>
           <div className="profile-view-name flex flex-col gap-y-2">
             <h1>Name</h1>
             <h1 className="font-bold">
@@ -90,7 +90,7 @@ export default function UserAdminView({
           </div>
         </div>
         <div className="flex flex-row items-center gap-x-3 my-5">
-          <h1>Change the role of this user to: </h1>
+          <h1 style={{ color: '#FFE9D7' }}>Change the role of this user to: </h1>
           <select
             value={newRole}
             onChange={(e) => {
