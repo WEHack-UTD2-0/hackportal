@@ -140,6 +140,7 @@ export default function AuthPage() {
                     <div style={{ color: '#FFE9D7' }}>
                       <input
                         className="mx-1 text-yellow-250"
+                        style={{ color: '#FFE9D7' }}
                         type="checkbox"
                         onClick={() => showPassword('passwordInputLg')}
                       />
@@ -180,7 +181,9 @@ export default function AuthPage() {
                   }}
                 />
               </div>
-              <h1 className="text-3xl text-yellow-250">Reset Password</h1>
+              <h1 className="text-3xl text-yellow-250" style={{ color: '#FFE9D7' }}>
+                Reset Password
+              </h1>
               <div className="w-[24rem]">
                 <input
                   className="text-yellow-250 w-full rounded-lg p-2 border-[1px] border-gray-500 mt-8 mb-4"
@@ -190,7 +193,8 @@ export default function AuthPage() {
                   placeholder="Email"
                 ></input>
                 <button
-                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-yellow-250 hover:shadow-lg hover:bg-green-100"
+                  style={{ color: '#FFE9D7' }}
+                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-green-300 hover:shadow-lg hover:bg-green-100"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');
@@ -319,7 +323,9 @@ export default function AuthPage() {
                   }}
                 />
               </div>
-              <h1 className="text-3xl font-black">Reset Password</h1>
+              <h1 className="text-3xl font-black" style={{ color: '#FFE9D7' }}>
+                Reset Password
+              </h1>
               <div className="w-full">
                 <input
                   className="w-full rounded-lg p-2 border-[1px] border-gray-500 my-4"
