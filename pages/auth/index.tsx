@@ -128,6 +128,7 @@ export default function AuthPage() {
                   <div className="flex justify-between">
                     <div
                       className="hover:underline cursor-pointer text-left text-yellow-250"
+                      style={{ color: '#FFE9D7' }}
                       onClick={() => {
                         setPasswordResetDialog(true);
                         setErrorMsg('');
@@ -136,7 +137,7 @@ export default function AuthPage() {
                     >
                       Forgot password?
                     </div>
-                    <div>
+                    <div style={{ color: '#FFE9D7' }}>
                       <input
                         className="mx-1 text-yellow-250"
                         type="checkbox"
@@ -222,8 +223,10 @@ export default function AuthPage() {
           {!passwordResetDialog ? (
             <>
               {/* Main Login Screen */}
-              <h1 className="text-2xl font-yellow-250 text-center">WEHack HackPortal</h1>
-              <p className="text-sm text-center">
+              <h1 className="text-2xl font-yellow-250 text-center" style={{ color: '#FFE9D7' }}>
+                WEHack HackPortal
+              </h1>
+              <p className="text-sm text-center" style={{ color: '#FFE9D7' }}>
                 Log in to continue or create an account to register
               </p>
               <button
@@ -232,7 +235,9 @@ export default function AuthPage() {
               >
                 Sign in with Google
               </button>
-              <div className="text-sm">or</div>
+              <div className="text-sm" style={{ color: '#FFE9D7' }}>
+                or
+              </div>
               {/* Account credential input fields */}
               <div className="w-5/6">
                 <form onSubmit={handleSubmit}>
@@ -262,6 +267,7 @@ export default function AuthPage() {
               </div>
               <div>
                 <input
+                  style={{ color: '#FFE9D7' }}
                   className="mr-1"
                   type="checkbox"
                   onClick={() => showPassword('passwordInputSm')}
@@ -284,6 +290,7 @@ export default function AuthPage() {
               {/* Account options */}
               <div className="text-sm w-5/6 my-4">
                 <div
+                  style={{ color: '#FFE9D7' }}
                   className="cursor-pointer hover:underline"
                   onClick={() => {
                     setPasswordResetDialog(true);
@@ -294,7 +301,9 @@ export default function AuthPage() {
                   Forgot Password?
                 </div>
                 <Link href="/auth/signup">
-                  <a className="w-full hover:underline">Create an account</a>
+                  <a className="w-full hover:underline" style={{ color: '#FFE9D7' }}>
+                    Create an account
+                  </a>
                 </Link>
               </div>
             </>
