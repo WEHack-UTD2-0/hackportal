@@ -140,7 +140,6 @@ export default function AuthPage() {
                     <div style={{ color: '#FFE9D7' }}>
                       <input
                         className="mx-1 text-yellow-250"
-                        style={{ color: '#FFE9D7' }}
                         type="checkbox"
                         onClick={() => showPassword('passwordInputLg')}
                       />
@@ -174,6 +173,7 @@ export default function AuthPage() {
             <div>
               <div className="w-[24rem] text-left">
                 <ArrowBackIcon
+                  style={{ color: '#FFE9D7' }}
                   className="cursor-pointer"
                   onClick={() => {
                     setPasswordResetDialog(false);
@@ -194,7 +194,7 @@ export default function AuthPage() {
                 ></input>
                 <button
                   style={{ color: '#FFE9D7' }}
-                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-green-300 hover:shadow-lg hover:bg-green-100"
+                  className="w-[24rem] px-4 py-2 rounded-md shadow-md bg-green-100 hover:shadow-lg hover:bg-green-200"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');
@@ -317,6 +317,7 @@ export default function AuthPage() {
               <div className="w-full text-left my-4">
                 <ArrowBackIcon
                   className="cursor-pointer"
+                  style={{ color: '#FFE9D7' }}
                   onClick={() => {
                     setPasswordResetDialog(false);
                     setErrorMsg('');
@@ -335,7 +336,7 @@ export default function AuthPage() {
                   placeholder="Email"
                 ></input>
                 <button
-                  className="px-4 py-2 rounded-md shadow-md bg-orange-550 hover:shadow-lg hover:bg-blue-450"
+                  className="px-4 py-2 rounded-md shadow-md bg-green-100 hover:shadow-lg hover:bg-green-200"
                   onClick={() => {
                     sendResetEmail();
                     setErrorMsg('');
