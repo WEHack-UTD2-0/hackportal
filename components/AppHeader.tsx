@@ -8,7 +8,7 @@ import { useAuthContext } from '../lib/user/AuthContext';
 import { navItems } from '../lib/data';
 import firebase from 'firebase/app';
 import Image from 'next/image';
-import wehacklogo from '../public/logoTransparent.png';
+import wehacklogo from '../public/LogoSparkle.png';
 
 /**
  * A global site header throughout the entire app.
@@ -78,9 +78,10 @@ export default function AppHeader() {
         <div className="flex w-6/12 max-w-[156px] justify-between items-center md:max-w-full md:justify-start md:w-9/12">
           <Link href="/">
             <a className="flex order-2 relative ml-[-6px] font-display self-center items-center w-[120px] md:order-1 md:ml-0 md:w-[120px]">
-              <Image src={wehacklogo} alt="Logo" width={500} height={380} objectFit="contain" />
+              <Image src={wehacklogo} alt="Logo" width={500} height={240} objectFit="contain" />
             </a>
           </Link>
+
           {/* Smartphone nav */}
           <div onClick={toggleMenu} className={'relative md:hidden'}>
             {mobileIcon ? <MenuIcon /> : <CloseIcon />}

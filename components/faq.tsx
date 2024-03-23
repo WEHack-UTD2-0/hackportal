@@ -57,10 +57,11 @@ export default function FaqPage({ fetchedFaqs }: { fetchedFaqs: AnsweredQuestion
                 expandAll();
               }}
               className="font-bold"
+              style={{ color: '#FFE9D7' }}
             >
               Expand All
             </button>
-            <ChevronUpIcon className="w-5 h-5" />
+            <ChevronUpIcon className="w-5 h-5" style={{ color: '#FFE9D7' }} />
           </div>
         </div>
         {/* FAQ for lg-md */}
