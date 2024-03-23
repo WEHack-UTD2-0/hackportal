@@ -67,14 +67,16 @@ export default function Scan() {
         {hasProfile ? (
           <div className="flex flex-col items-center justify-center top-6 ">
             <div>
-              <h4 className="text-center text-xl">Hacker Tag</h4>
-              <p>
+              <h4 className="text-center text-xl" style={{ color: '#FFE9D7' }}>
+                Hacker Tag
+              </h4>
+              <p style={{ color: '#FFE9D7' }}>
                 Tap the button to generate your QR code to be scanned by an organizer for events
               </p>
               <span className="text-center text-lg">{error}</span>
             </div>
             <div
-              className="rounded-2xl bg-orange-550 text-center p-3 m-auto cursor-pointer hover:brightness-125 my-3"
+              className="rounded-2xl bg-green-500 text-center p-3 m-auto cursor-pointer hover:brightness-125 my-3"
               onClick={fetchQR}
             >
               Fetch QR

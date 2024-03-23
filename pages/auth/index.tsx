@@ -128,6 +128,7 @@ export default function AuthPage() {
                   <div className="flex justify-between">
                     <div
                       className="hover:underline cursor-pointer text-left text-yellow-250"
+                      style={{ color: '#FFE9D7' }}
                       onClick={() => {
                         setPasswordResetDialog(true);
                         setErrorMsg('');
@@ -136,7 +137,7 @@ export default function AuthPage() {
                     >
                       Forgot password?
                     </div>
-                    <div>
+                    <div style={{ color: '#FFE9D7' }}>
                       <input
                         className="mx-1 text-yellow-250"
                         type="checkbox"
