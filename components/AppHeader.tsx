@@ -88,7 +88,7 @@ export default function AppHeader() {
             <ul
               className={`${
                 showMenu ? 'translate-x-0' : '-translate-x-full'
-              } transform transition-all ease-out duration-300 flex w-6/12 h-screen border-2 border-black flex-col bg-blue-450 fixed top-0 left-0 z-[-1] pt-20`}
+              } transform transition-all ease-out duration-300 flex w-6/12 h-screen border-2 border-black flex-col bg-green-300 fixed top-0 left-0 z-[-1] pt-20`}
             >
               {dynamicNavItems.map((item) => (
                 <Link key={item.text} href={item.path}>
